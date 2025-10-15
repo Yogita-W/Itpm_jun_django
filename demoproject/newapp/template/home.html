@@ -1,0 +1,28 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'newapp/css/style.css' %}">
+    <title>hello</title>
+    <style>
+        body {
+               
+            display: flex;
+            height: 100vh;
+            justify-content: right;
+            align-items: center;
+           
+        }
+        h1 {
+            color: darkgreen;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1> Hello {{name}} well-come!<br>
+    Hello Well-come to Home page</h1>
+</body>
+</html>

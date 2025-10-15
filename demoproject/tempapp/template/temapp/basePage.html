@@ -1,0 +1,37 @@
+
+{% include "header.html" %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>hello</title>
+    <style>
+        body {
+               
+            display: flex;
+            height: 100vh;
+            justify-content: top;
+            align-items: center;
+           
+        }
+        h1 {
+            color: darkgreen;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h3> Hello well-come!<br>
+    Hello Well-come to Base page 
+   {% block content %}
+     
+    {% endblock %}
+
+
+
+</h3>
+
+</body>
+</html>
