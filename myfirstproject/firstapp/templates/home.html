@@ -13,12 +13,18 @@
               
              ">
 
-       <h2>{{Name}} well-come to Home Page</h2><hr>
+       <h2> 
        <p style="font-size:xx-large;
        height: 60vh;
               display :flex;
               justify-content:center;
-              align-items:center">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Error cum odit quidem obcaecati non facere dolor deleniti libero ut, adipisci doloribus suscipit cumque consectetur impedit exercitationem,<br> veritatis inventore unde praesentium?</p>       
-    {% include 'footer.html' %}   
+              align-items:center">
+              You are successfully logged in.<br>
+        {{Name}} well-come to Home Page<hr>
+
+              
+            <a href="{% url 'logout' %}">Logout</a>
+              {% include 'footer.html' %}  
+
 </body>
 </html>

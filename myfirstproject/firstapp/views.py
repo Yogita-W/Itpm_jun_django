@@ -38,8 +38,8 @@ def logout_view(request):
 
 # ✅ Home (Protected)
 @login_required
-def home1_view(request):
-    return render(request, 'home1.html')
+def home_view(request):
+    return render(request, 'home.html')
 
 from django.contrib.admin.views.decorators import staff_member_required
 
