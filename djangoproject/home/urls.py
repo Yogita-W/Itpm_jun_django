@@ -1,7 +1,10 @@
 #home/url.py
 from django.urls import path
-from .views import post_list
+from .views import *
 
 urlpatterns = [
-    path('posts/', post_list),
+    path('student_list/', student_list),
+    path('student/<int:id>/', student_detail)
 ]
+
+
